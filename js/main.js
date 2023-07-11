@@ -27,7 +27,7 @@ document.getElementById("header").innerHTML=`<nav class="navbar navbar-expand-sm
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Tecno</a>
+                <a class="navbar-brand" href="index.html">Digital New's</a>
                 <div class="collapse navbar-collapse nav justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
