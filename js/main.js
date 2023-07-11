@@ -27,22 +27,20 @@ document.getElementById("header").innerHTML=`<nav class="navbar navbar-expand-sm
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <a class="navbar-brand" href="index.html">Tecno</a>
                 <div class="collapse navbar-collapse nav justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a href="#inicio" class="nav-link active">|&nbsp;&nbsp;Inicio</a>
+                            <a href="index.html" class="nav-link active">| Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#nosotros" class="nav-link active">|&nbsp;&nbsp;Nosotros</a>
+                            <a href="productos.html" class="nav-link active">| Lista De Productos</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#servicios" class="nav-link active">|&nbsp;&nbsp;Servicios</a>
+                            <a href="producto_nuevo.html" class="nav-link active">| Alta Producto</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#prices" class="nav-link active">|&nbsp;&nbsp;Precios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#contacto" class="nav-link active">|&nbsp;&nbsp;Contacto</a>
+                            <a href="producto_editar.html" class="nav-link active">| Actualizar Producto</a>
                         </li>
                     </ul>
                 </div>
