@@ -1,9 +1,3 @@
-//app.use(function(req, res, next) {
-//    res.header('Access-Control-Allow-Origin', req.headers.origin);
-//    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-//    next();
-//});
-
 console.log(location.search)     // lee los argumentos pasados a este formulario
 var args = location.search.substr(1).split('&');  
 //separa el string por los “&” creando una lista [“id=3” , “nombre=’tv50’” , ”precio=1200”,”stock=20”]
@@ -14,14 +8,7 @@ for (let i = 0; i < args.length; ++i) {
     parts[i] = args[i].split('=');
 }
 
-//let allowCrossDomain = function(req, res, next) {
-//    res.header('Access-Control-Allow-Origin', "*");
-//    res.header('Access-Control-Allow-Headers', "*");
-//    next();
-//  }
-//parts.use(allowCrossDomain);
-//const cors = require('cors');
-//app.use(cors());
+
 //decodeUriComponent elimina los caracteres especiales que recibe en la URL 
 document.getElementById("id").value = decodeURIComponent(parts[0][1])
 document.getElementById("nombre").value = decodeURIComponent(parts[1][1])
