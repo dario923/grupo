@@ -7,8 +7,12 @@ var parts = []
 for (let i = 0; i < args.length; ++i) {
     parts[i] = args[i].split('=');
 }
-
-
+fetch(request, {mode: 'no-cors'})
+        .then(function(response) {
+          console.log(response); 
+        }).catch(function(error) {  
+          console.log('Request failed', error)  
+});
 //decodeUriComponent elimina los caracteres especiales que recibe en la URL 
 document.getElementById("id").value = decodeURIComponent(parts[0][1])
 document.getElementById("nombre").value = decodeURIComponent(parts[1][1])
@@ -34,16 +38,14 @@ function modificar() {
         body: JSON.stringify(producto),
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
-        redirect: 'follow'      
-        
+        redirect: 'follow'
     }
-
+    
     fetch(url, options)
         .then(function () {
             console.log("modificado")
             alert("Registro modificado")
-            window.location.href = "./productos.html";
-             
+            window.location.href = "./productos.html";  
         //NUEVO,  si les da error el fetch  comentar esta linea que puede dar error  
         })
         
