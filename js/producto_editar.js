@@ -7,12 +7,7 @@ var parts = []
 for (let i = 0; i < args.length; ++i) {
     parts[i] = args[i].split('=');
 }
-fetch(request, {mode: 'no-cors'})
-        .then(function(response) {
-          console.log(response); 
-        }).catch(function(error) {  
-          console.log('Request failed', error)  
-});
+
 //decodeUriComponent elimina los caracteres especiales que recibe en la URL 
 document.getElementById("id").value = decodeURIComponent(parts[0][1])
 document.getElementById("nombre").value = decodeURIComponent(parts[1][1])
